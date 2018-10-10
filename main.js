@@ -14,6 +14,6 @@ kgInput.addEventListener('input', e /*või event*/ => {
 	
 	output.style.visibility = (kg === '0') ? 'hidden' : 'visible' ;
 	gramOutput.innerHTML = `${kg * 1000} g`;
-	poundOutput.innerHTML = `${kg * 2.2046} lb`;
-	untsOutput.innerHTML = `${kg * 35.2739} oz`;
+	poundOutput.innerHTML = `${(kg * 2.2046).toFixed(2)} lb`;
+	untsOutput.innerHTML = `${(kg * 35.2739).toFixed(2)} oz`;
 }); 
